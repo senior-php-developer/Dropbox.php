@@ -1,0 +1,6 @@
+.b_submit, .b_cancel {padding: 4px 4px; margin: 2px;}
+.folder_list img {left:0px; position: static;}
+
+.element {float: left;}
+.element img {display: block;}
+.element:hover {width: 90px; height: 90px;}

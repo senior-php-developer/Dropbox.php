@@ -1,0 +1,26 @@
+/* context menu styling */
+.contextMenu {position: absolute;	width: 120px;	z-index: 99999;	border: solid 1px #CCC;	background: #EEE;	padding: 0px;	margin: 0px;	display: none;}
+.contextMenu li {list-style: none;	padding: 0px;	margin: 0px;}
+.contextMenu a {color: #333;	text-decoration: none;	display: block;	line-height: 20px;	height: 20px;	background-position: 6px center;	background-repeat: no-repeat;	outline: none;	padding: 1px 5px;	padding-left: 28px;}
+.contextMenu li.hover a {color: #FFF;	background-color: #41c4dc;}
+.contextMenu li.disabled a {color: #AAA;	cursor: default;}
+.contextMenu li.hover.disabled a {background-color: transparent;}
+.contextMenu li.separator {border-top: solid 1px #CCC;}
+
+.contextMenu li.settings a { background-image: url(../img/menu/settings.png); }
+.contextMenu li.open_folder a { background-image: url(../img/menu/open_folder.png); }
+.contextMenu li.share a { background-image: url(../img/menu/share.png); }
+.contextMenu li.delete a { background-image: url(../img/menu/delete.png); }
+.contextMenu li.delete_folder a { background-image: url(../img/menu/delete_folder.png); }
+.contextMenu li.add_dir a { background-image: url(../img/menu/add_dir.png); }
+.contextMenu li.copy a { background-image: url(../img/menu/copy.png); }
+.contextMenu li.paste a { background-image: url(../img/menu/paste.png); }
+.contextMenu li.rename a { background-image: url(../img/menu/rename.png); }
+.contextMenu li.download a { background-image: url(../img/menu/download.png); }
+.contextMenu li.queue a { background-image: url(../img/menu/queue.png); }
+
+/* suggestion box styling */
+.suggestionsBox {position: relative;	margin: 10px 0px 0px 0px;	width: 180px;	background-color: #212427;-moz-border-radius: 7px;-webkit-border-radius: 7px;	border: 2px solid #000;	color: #fff;list-style:none;}
+.suggestionList {margin: 0px 0px -5px 0px;	padding: 0px; position: relative; top: -7px;}
+.suggestionList li {padding: 3px; cursor: pointer;}
+.suggestionList li:hover {background-color: #659CD8;}

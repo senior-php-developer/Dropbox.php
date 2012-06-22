@@ -1,0 +1,124 @@
+/* CSS hacks and fixes */
+a { outline:none; text-decoration:none; color:#4B6CF7; padding:0; margin:0;}
+a:hover {text-decoration: underline;}
+a img { border:none;} /* Remove IE's blue borders */
+
+/* headings */
+h1 {font-size: 2.4em;}
+h2 {font-size: 2.2em;}
+h3 {font-size: 2.0em;}
+h4 {font-size: 1.6em;}
+h5 {font-size: 1.4em;}
+h6 {font-size: 1.2em;}
+
+/* fonts */
+h1, h2, h3, h4, h5 {font-family: Calibri, "trebuchet MS", sans-serif;}
+body {font-family: Calibri, Arial, sans-serif; font-size: 16px;}
+
+/* additional classes */
+.lt {float: left;}
+.rt {float: right;}
+.clr {clear: both; width: 0px; height: 0px; content: " ";}
+.hid {display: none;}
+.brd10 {-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.brd5 {-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+
+/* content */
+body {background: url('i/bg_top.jpg') no-repeat center -10px; color: #444;}
+.header {width: 100%; height: 100px;}
+.middle {width: 100%;}
+.footer {width: 100%; height: 60px; margin-top: 40px; text-align: center;}
+.canvas {width: 960px; margin: 0 auto;}
+.main_content {padding: 40px 20px 30px; background-color: #ccfdf8; border: #8cdbff solid 2px;}
+
+/* header */
+.login_box {color: #444; background-color:#eef; padding: 8px; position: relative; bottom: -50px; left: 800px; width: 50px; border: solid 1px #aaa; font-variant: small-caps; font-size: 18px;}
+.login_box:hover {background-color: #ccfdf8; color: #222;}
+
+/* ============================= INDEX.PHP ==========================*/
+
+/* cloud boxes */
+.main_content h2 {font-family: trebuchet MS; font-size: 2.8em; font-weight: 100; margin-bottom: 10px; color: #444}
+.cloud_box {width: 295px; height: 320px; float: left; margin: 0 5px; cursor: pointer; font-family: Georgia, sans-serif; font-size: 22px; font-style: italic;}
+#box1:hover {background-color: #84f8eb;}
+#box2:hover {background-color: #B7FF88;}
+#box3:hover {background-color: #ccc;}
+
+.cloud {height: 170px; margin: 40px 20px;}
+.cloud h3 {position: relative; top: 80px; left: -15px; text-align: center;}
+#box1 .cloud {background: url('i/cloud_left.png') no-repeat center 0; color: #4a9999;}
+#box2 .cloud {background: url('i/cloud_center.png') no-repeat center 0; color: #fc5454;}
+#box3 .cloud {background: url('i/cloud_right.png') no-repeat center 0; color: #3b3b3b;}
+
+.cloud_box p {color: #fc5454; text-align: center;}
+
+/* dialog boxes */
+.d_box {width: 200px; padding: 15px 10px; background-color: #ccfdf8; border: #59b3ff solid 2px; opacity: 0.92; position: fixed; line-height: 120%; font-size: 16px; }
+.d_box input	{width: 185px; padding: 4px; font-size: 22px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.d_box .focus {background-color: #e6f4ff; border: #3599ed 2px solid;}
+.d_box .blur  {background-color: #EBEBEB; border: #7a7a7a 2px solid;}
+.d_box .error {background-color: #ff8484; border: #fd3636 2px solid;}
+
+#d_login a {position: relative; left: 50px;}
+#d_reg #recaptcha_area {position: absolute; left: 230px; top: 30px;}
+#d_soon {line-height: 220%; width: 320px;}
+#d_soon .close {width:35px; height: 35px; position: absolute; top:0px; right:0px; background-image: url(../img/popclose.png);cursor: pointer;}
+/* information boxes */
+#p_info {position: fixed; top: 0px; left: 20px; width: 200px; padding: 8px; -moz-border-radius-bottomright: 6px; -moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; border: solid 2px #57caff; border-top: none; text-align: center; font-size: 18px; background-color: #6DF4FA; opacity: 0.7}
+#p_ajax {position: fixed; top: 5px; left: 5px;}
+
+/*======================= STORAGE.PHP =========================*/
+
+/* storage area */
+.left_panel {float: left; width: 200px;}
+.center_panel {float:left; width: 490px;}
+.right_panel {float:left; width: 220px;}
+.p_content {padding: 10px; margin:5px; background-color:#ecfffe; border: solid 2px #35deed; min-height: 200px;}
+.p_content h2 {font-size: 22px;}
+
+.toolbar {margin: 5px 0 10px;}
+.toolbar img {cursor: pointer; margin: 0 10px;}
+
+/* overlay */
+.overlay {background-image:url(../img/profile_bg.png); width:600px; height:400px; display:none; padding:50px; }
+.overlay .close {width: 35px; height: 35px; position:absolute; left:5px; top:5px; cursor:pointer;}
+
+/* inputs and forms */
+.d_panel input	{padding: 3px; font-size: 19px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.d_panel .focus {background-color: #e6f4ff; border: #3599ed 2px solid;}
+.d_panel .blur  {background-color: #EBEBEB; border: #7a7a7a 2px solid;}
+.d_panel .error {background-color: #ff8484; border: #fd3636 2px solid;}
+.b_submit, .b_cancel {background-color: #c1ccba; border: #ababab 1px solid; padding: 5px 6px; margin: 4px; font-family: sans-serif; font-weight: bold; font-size: 16px; cursor: pointer; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.b_submit:hover {background-color: #adff78; border: #60b329 1px solid;}
+.b_cancel:hover {background-color: #fb8282; border: #ff2222 1px solid;}
+
+/* left panel */
+.folder_list {max-height: 300px; min-height: 200px; overflow: auto; text-align: center; font-size: 16px}
+.folder_list div {margin-bottom: 10px;}
+.folder_list img {width: 70px; cursor: pointer; display:block; position:relative; margin: 0 auto; opacity:0.4;}
+.folder_list img.hover {opacity: 0.5}
+.folder_list img.active {opacity: 1}
+
+/* central panel */
+#folder_contents .ajax {min-height: 300px; max-height: 550px;overflow: auto;}
+.element {display:inline-table; width: 70px; overflow: hidden; height: 80px; margin: 5px 7px; padding: 2px; text-align: center; cursor: pointer; font-size: 12px;}
+.element:hover {color: #000; font-weight: bold;}
+.element img {margin: 5px 10px; width: 48px;}
+.element span {display: block; font-family: arial;}
+.selected {border: 1px solid #ccc;width: 46px;}
+
+
+/* right panel */
+.right_panel .ajax {line-height: 160%;}
+#queue_list .ajax div {margin: 6px 3px; padding: 3px 6px; cursor: pointer;}
+#queue_list .ajax div.qdir { background-color: #ECD169; font-weight: bold;}
+#queue_list .ajax div.qfile { background-color: #F8F6D8; }
+#queue_list .ajax div img {float: right; cursor: pointer;}
+#queue_list div#buts {cursor: pointer; text-align: center;}
+
+#shares .suser {background-color:#EEFFBB; margin:5px 0; padding:5px 10px;}
+#shares .suser img {float:right; cursor: pointer;}
+
+
+#profile .content input {padding: 3px; margin: 3px; width:120px;}
+#profile .content input:focus {outline: 1px solid #5B9AEE; }
